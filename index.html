@@ -7,10 +7,9 @@
     <style>
         body {
             font-family: "Bookman Old Style", serif;
-            background: url('image.png') no-repeat center center fixed;
-            background-size: cover;
+            background: #F1FAEE; /* Soft light gray background */
             text-align: center;
-            color: white;
+            color: #1D3557; /* Deep blue text color */
             opacity: 0;
             animation: fadeIn 1.5s ease-in-out forwards;
         }
@@ -21,15 +20,21 @@
         .container {
             margin-top: 10%;
         }
+        h1 {
+            font-size: 3em;
+            color: #E63946; /* Vibrant red-orange */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
         .link-card {
-            background: rgba(0, 0, 0, 0.7);
+            background: rgba(255, 255, 255, 0.8);
             padding: 20px;
             margin: 20px auto;
             width: 50%;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
             opacity: 0;
+            color: #1D3557;
         }
         .link-card:nth-child(2n) {
             animation: slideFromRight 1s ease-in-out forwards;
@@ -47,28 +52,32 @@
         }
         .link-card:hover {
             transform: scale(1.05);
+            background-color: #E63946; /* Vibrant red-orange */
+            color: #FFF; /* White text on hover */
         }
         .link-button {
             display: inline-block;
             padding: 10px 20px;
             margin-top: 10px;
-            background-color: #4CAF50;
+            background-color: #457B9D; /* Cool blue */
             color: white;
             text-decoration: none;
             font-size: 18px;
             border-radius: 5px;
             transition: transform 0.3s ease-in-out;
+            border: 2px solid #1D3557; /* Deep blue border */
         }
         .link-button:hover {
             transform: scale(1.1);
-            background-color: #45a049;
+            background-color: #1D3557; /* Deep blue on hover */
+            border: 2px solid #E63946; /* Vibrant red-orange border */
         }
         .footer {
             margin-top: 50px;
             font-size: 18px;
             font-weight: bold;
-            color: #00bcd4;
-            text-shadow: 0 0 5px #00bcd4, 0 0 10px #008ba3;
+            color: #457B9D; /* Cool blue */
+            text-shadow: 0 0 5px #457B9D, 0 0 10px #1D3557;
             opacity: 0;
             animation: fadeIn 2s ease-in-out forwards 1.5s;
         }
