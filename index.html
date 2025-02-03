@@ -6,80 +6,99 @@
     <title>Tech Learning Hub</title>
     <style>
         body {
-            font-family: "Bookman Old Style", serif;
-            background: #F1FAEE; /* Soft light gray background */
+            font-family: 'Press Start 2P', cursive; /* Pixelated font */
+            background-color: #000000; /* Black background for the 80s vibe */
+            color: #E0E0E0; /* Light gray text for contrast */
             text-align: center;
-            color: #1D3557; /* Deep blue text color */
-            opacity: 0;
-            animation: fadeIn 1.5s ease-in-out forwards;
+            padding: 20px;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+
+        h1 {
+            font-size: 4em;
+            color: #9B4DFF; /* Neon Purple for heading */
+            text-shadow: 0 0 15px #9B4DFF, 0 0 25px #9B4DFF; /* Glowing text effect */
+            letter-spacing: 3px;
         }
+
         .container {
             margin-top: 10%;
         }
-        h1 {
-            font-size: 3em;
-            color: #E63946; /* Vibrant red-orange */
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
+
         .link-card {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 20px;
+            background: #212121; /* Dark background for cards */
+            border: 3px solid #9B4DFF; /* Neon Purple border */
+            padding: 25px;
             margin: 20px auto;
-            width: 50%;
+            width: 60%;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-            opacity: 0;
-            color: #1D3557;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Light glow effect */
+            transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
         }
+
         .link-card:nth-child(2n) {
             animation: slideFromRight 1s ease-in-out forwards;
         }
+
         .link-card:nth-child(2n+1) {
             animation: slideFromLeft 1s ease-in-out forwards;
         }
+
         @keyframes slideFromRight {
             from { transform: translateX(100px); opacity: 0; }
             to { transform: translateX(0); opacity: 1; }
         }
+
         @keyframes slideFromLeft {
             from { transform: translateX(-100px); opacity: 0; }
             to { transform: translateX(0); opacity: 1; }
         }
+
         .link-card:hover {
             transform: scale(1.05);
-            background-color: #E63946; /* Vibrant red-orange */
-            color: #FFF; /* White text on hover */
+            box-shadow: 0 0 25px rgba(255, 255, 255, 1);
+            background-color: #9B4DFF; /* Neon Purple hover */
+            color: #000;
         }
+
         .link-button {
             display: inline-block;
-            padding: 10px 20px;
-            margin-top: 10px;
-            background-color: #457B9D; /* Cool blue */
+            padding: 12px 25px;
+            margin-top: 15px;
+            background-color: #39FF14; /* Neon Green for buttons */
             color: white;
             text-decoration: none;
             font-size: 18px;
-            border-radius: 5px;
-            transition: transform 0.3s ease-in-out;
-            border: 2px solid #1D3557; /* Deep blue border */
+            border-radius: 8px;
+            border: 2px solid #9B4DFF; /* Neon Purple border */
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: transform 0.3s ease-in-out, background-color 0.3s ease;
         }
+
         .link-button:hover {
             transform: scale(1.1);
-            background-color: #1D3557; /* Deep blue on hover */
-            border: 2px solid #E63946; /* Vibrant red-orange border */
+            background-color: #9B4DFF; /* Neon Purple hover */
+            color: #000;
+            border: 2px solid #39FF14; /* Neon Green border */
         }
+
         .footer {
             margin-top: 50px;
-            font-size: 18px;
+            font-size: 1.5em;
             font-weight: bold;
-            color: #457B9D; /* Cool blue */
-            text-shadow: 0 0 5px #457B9D, 0 0 10px #1D3557;
+            color: #FFFF00; /* Bright Yellow for footer */
+            text-shadow: 0 0 15px #FFFF00, 0 0 25px #FFFF00; /* Glowing text effect */
             opacity: 0;
             animation: fadeIn 2s ease-in-out forwards 1.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .footer span {
+            font-size: 2em;
         }
     </style>
 </head>
@@ -119,6 +138,8 @@
             <a class="link-button" href="https://www.youtube.com/watch?v=s1xc1HVsRk0&list=PLalrWAGybpB-L1PGA-NfFu2uiWHEsdscD" target="_blank">Access Here</a>
         </div>
     </div>
-    <div class="footer">💡 Stay Curious, Keep Learning! 💡</div>
+    <div class="footer">
+        💡 <span>Stay Curious, Keep Learning!</span> 💡
+    </div>
 </body>
 </html>
