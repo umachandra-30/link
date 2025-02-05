@@ -6,105 +6,80 @@
     <title>Tech Learning Hub</title>
     <style>
         body {
-            font-family: 'Press Start 2P', cursive; /* Pixelated font */
-            background-color: #000000; /* Black background for the 80s vibe */
-            color: #E0E0E0; /* Light gray text for contrast */
+            font-family: 'Arial', sans-serif;
+            background-color: #F5F7FA;
+            color: #333;
+            margin: 0;
+            padding: 0;
             text-align: center;
-            padding: 20px;
         }
 
-        h1 {
-            font-size: 4em;
-            color: #9B4DFF; /* Neon Purple for heading */
-            text-shadow: 0 0 15px #9B4DFF, 0 0 25px #9B4DFF; /* Glowing text effect */
-            letter-spacing: 3px;
+        .header {
+            background-color: #1E3A8A;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2em;
+            font-weight: bold;
         }
 
         .container {
-            margin-top: 10%;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
         }
 
         .link-card {
-            background: #212121; /* Dark background for cards */
-            border: 3px solid #9B4DFF; /* Neon Purple border */
-            padding: 25px;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            padding: 20px;
             margin: 20px auto;
-            width: 60%;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.7); /* Light glow effect */
-            transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
-        }
-
-        .link-card:nth-child(2n) {
-            animation: slideFromRight 1s ease-in-out forwards;
-        }
-
-        .link-card:nth-child(2n+1) {
-            animation: slideFromLeft 1s ease-in-out forwards;
-        }
-
-        @keyframes slideFromRight {
-            from { transform: translateX(100px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
-        }
-
-        @keyframes slideFromLeft {
-            from { transform: translateX(-100px); opacity: 0; }
-            to { transform: translateX(0); opacity: 1; }
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            display: inline-block;
+            width: 80%;
         }
 
         .link-card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 25px rgba(255, 255, 255, 1);
-            background-color: #9B4DFF; /* Neon Purple hover */
-            color: #000;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .link-card h2 {
+            font-size: 1.5em;
+            color: #1E3A8A;
         }
 
         .link-button {
             display: inline-block;
-            padding: 12px 25px;
-            margin-top: 15px;
-            background-color: #39FF14; /* Neon Green for buttons */
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #1E3A8A;
             color: white;
             text-decoration: none;
-            font-size: 18px;
-            border-radius: 8px;
-            border: 2px solid #9B4DFF; /* Neon Purple border */
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
         }
 
         .link-button:hover {
-            transform: scale(1.1);
-            background-color: #9B4DFF; /* Neon Purple hover */
-            color: #000;
-            border: 2px solid #39FF14; /* Neon Green border */
+            background-color: #153067;
         }
 
         .footer {
-            margin-top: 50px;
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #FFFF00; /* Bright Yellow for footer */
-            text-shadow: 0 0 15px #FFFF00, 0 0 25px #FFFF00; /* Glowing text effect */
-            opacity: 0;
-            animation: fadeIn 2s ease-in-out forwards 1.5s;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.2em;
+            color: #555;
         }
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        .footer span {
-            font-size: 2em;
-        }
+        
     </style>
 </head>
 <body>
+    <div class="header">Tech Learning Hub</div>
     <div class="container">
-        <h1>Welcome to Tech Learning Hub</h1>
         <div class="link-card">
             <h2>Computer Basics Course</h2>
             <a class="link-button" href="https://www.netacad.com/courses/computer-hardware-basics?courseLang=en-US" target="_blank">Access Here</a>
@@ -138,8 +113,6 @@
             <a class="link-button" href="https://www.youtube.com/watch?v=s1xc1HVsRk0&list=PLalrWAGybpB-L1PGA-NfFu2uiWHEsdscD" target="_blank">Access Here</a>
         </div>
     </div>
-    <div class="footer">
-        💡 <span>Stay Curious, Keep Learning!</span> 💡
-    </div>
+    <div class="footer">&copy; 2025 Tech Learning Hub | Empowering Knowledge</div>
 </body>
 </html>
