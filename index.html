@@ -24,47 +24,29 @@
         }
 
         .container {
-            max-width: 900px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1000px;
             margin: 40px auto;
-            padding: 20px;
+            gap: 20px;
         }
 
-        .link-card {
-            background: #ffffff;
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            display: inline-block;
-            width: 80%;
-        }
-
-        .link-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-        }
-
-        .link-card h2 {
-            font-size: 1.5em;
-            color: #1E3A8A;
-        }
-
-        .link-button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 10px;
-            background-color: #1E3A8A;
+        .menu-button {
+            background: #1E3A8A;
             color: white;
-            text-decoration: none;
-            font-size: 1em;
-            border-radius: 5px;
-            transition: background-color 0.3s ease-in-out;
+            padding: 15px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, transform 0.2s;
+            width: 300px;
         }
 
-        .link-button:hover {
+        .menu-button:hover {
             background-color: #153067;
+            transform: scale(1.05);
         }
 
         .footer {
@@ -78,58 +60,45 @@
 <body>
     <div class="header">Tech Learning Hub</div>
     <div class="container">
-        <div class="link-card">
-            <h2>Computer Basics Course</h2>
-            <a class="link-button" href="https://www.netacad.com/courses/computer-hardware-basics?courseLang=en-US" target="_blank">Access Here</a>
-        </div>
-        <div class="link-card">
-            <h2>Operating Systems Basics Course</h2>
-            <a class="link-button" href="https://www.netacad.com/courses/operating-systems-basics?courseLang=en-US" target="_blank">Access Here</a>
-        </div>
-        <div class="link-card">
-            <h2>Programming Notes</h2>
-            <a class="link-button" href="https://goalkicker.com/" target="_blank">Access Here</a>
-        </div>
-        <div class="link-card">
-            <h2>Net Ninja</h2>
-            <a class="link-button" href="https://www.youtube.com/@NetNinja" target="_blank">Access Here</a>
-        </div>
-        <div class="link-card">
-            <h2>Ethical Hacking</h2>
-            <a class="link-button" href="https://youtu.be/WnN6dbos5u8" target="_blank">Access Here</a>
-        </div>
-        <div class="link-card">
-            <h2>OS PPT Links</h2>
-            <a class="link-button" href="https://www.os-book.com/OS9/slide-dir/index.html" target="_blank">Access Here</a>
-        </div>
-        <div class="link-card">
-            <h2>MongoDB Tutorial</h2>
-            <a class="link-button" href="https://www.youtube.com/watch?v=ExcRbA7fy_A&list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA" target="_blank">Access Here</a>
-        </div>
-        <div class="link-card">
-            <h2>Cassandra Tutorial</h2>
-            <a class="link-button" href="https://www.youtube.com/watch?v=s1xc1HVsRk0&list=PLalrWAGybpB-L1PGA-NfFu2uiWHEsdscD" target="_blank">Access Here</a>
-        </div>
-        <div class="link-card">
-            <h2>OS LAB PROGRAMS</h2>
-            <a class="link-button" href="https://github.com/umachandra-30/cprograms" target="_blank">Access Here</a>
-        </div>
-        <div class="link-card">
-            <h2>Programming Tasks</h2>
-            <a class="link-button" href="https://rosettacode.org/wiki/Category:Programming_Tasks" target="_blank">Access Here</a>
-        </div>
-        <div class="link-card">
-            <h2>Free Books for All Subjects</h2>
-            <a class="link-button" href="https://www.pdfdrive.com/" target="_blank">Access Here</a>
-        </div>
-        <div class="link-card">
-            <h2>Problem Solving Platform</h2>
-            <a class="link-button" href="https://cses.fi/" target="_blank">Access Here</a>
-        </div>
-        <div class="link-card">
-            <h2>Algorithms Learning Resource</h2>
-            <a class="link-button" href="https://cp-algorithms.com/" target="_blank">Access Here</a>
-        </div>
+        <a href="https://www.netacad.com/courses/computer-hardware-basics?courseLang=en-US" target="_blank">
+            <button class="menu-button">Computer Basics Course</button>
+        </a>
+        <a href="https://www.netacad.com/courses/operating-systems-basics?courseLang=en-US" target="_blank">
+            <button class="menu-button">Operating Systems Basics Course</button>
+        </a>
+        <a href="https://goalkicker.com/" target="_blank">
+            <button class="menu-button">Programming Notes</button>
+        </a>
+        <a href="https://www.youtube.com/@NetNinja" target="_blank">
+            <button class="menu-button">Net Ninja</button>
+        </a>
+        <a href="https://youtu.be/WnN6dbos5u8" target="_blank">
+            <button class="menu-button">Ethical Hacking</button>
+        </a>
+        <a href="https://www.os-book.com/OS9/slide-dir/index.html" target="_blank">
+            <button class="menu-button">OS PPT Links</button>
+        </a>
+        <a href="https://www.youtube.com/watch?v=ExcRbA7fy_A&list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA" target="_blank">
+            <button class="menu-button">MongoDB Tutorial</button>
+        </a>
+        <a href="https://www.youtube.com/watch?v=s1xc1HVsRk0&list=PLalrWAGybpB-L1PGA-NfFu2uiWHEsdscD" target="_blank">
+            <button class="menu-button">Cassandra Tutorial</button>
+        </a>
+        <a href="https://github.com/umachandra-30/cprograms" target="_blank">
+            <button class="menu-button">OS LAB PROGRAMS</button>
+        </a>
+        <a href="https://rosettacode.org/wiki/Category:Programming_Tasks" target="_blank">
+            <button class="menu-button">Programming Tasks</button>
+        </a>
+        <a href="https://www.pdfdrive.com/" target="_blank">
+            <button class="menu-button">Free Books for All Subjects</button>
+        </a>
+        <a href="https://cses.fi/" target="_blank">
+            <button class="menu-button">Problem Solving Platform</button>
+        </a>
+        <a href="https://cp-algorithms.com/" target="_blank">
+            <button class="menu-button">Algorithms Learning Resource</button>
+        </a>
     </div>
     <div class="footer">&copy; 2025 Tech Learning Hub | Empowering Knowledge</div>
 </body>
