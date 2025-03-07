@@ -4,54 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Learning Hub</title>
-    <style>
+        <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #F4F4F4;
-            color: #333;
+            background-color: #121212;
+            color: #E0E0E0;
             margin: 0;
             padding: 0;
             text-align: center;
         }
 
         .header {
-            background-color: #1E3A8A;
-            color: white;
-            padding: 20px;
+            background-color: #1F2833;
+            color: #66FCF1;
+            text-align: center;
+            padding: 20px 0;
             font-size: 2em;
             font-weight: bold;
+            border-bottom: 4px solid #66FCF1;
         }
 
         .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: stretch; /* Makes sure all blocks are equal height */
             max-width: 1000px;
             margin: 40px auto;
-            padding: 0 20px;
+            gap: 20px;
         }
 
         .menu-button {
-            background: #1E3A8A;
-            color: white;
-            padding: 20px;
+            background: #1F2833;
+            color: #E0E0E0;
+            padding: 15px 20px;
             font-size: 1.2em;
-            border: none;
+            border: 2px solid #66FCF1;
             border-radius: 8px;
             cursor: pointer;
             transition: background-color 0.3s ease-in-out, transform 0.2s;
-            text-transform: uppercase;
+            width: 300px;
             font-weight: bold;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%; /* Ensures all buttons take full height */
         }
 
         .menu-button:hover {
-            background-color: #153067;
+            background-color: #66FCF1;
+            color: #1F2833;
             transform: scale(1.05);
         }
 
@@ -59,32 +56,49 @@
             text-align: center;
             padding: 20px;
             font-size: 1.2em;
-            color: #555;
-            background: #E0E0E0;
+            color: #A0A0A0;
+            background: #1F2833;
             margin-top: 40px;
         }
-
-        a {
-            text-decoration: none;
-            width: 100%;
-            height: 100%;
-        }
     </style>
+
 </head>
 <body>
     <div class="header">Tech Learning Hub</div>
     <div class="container">
-        <a href="https://goalkicker.com/" target="_blank"><button class="menu-button">Programming Notes</button></a>
-        <a href="https://www.youtube.com/@NetNinja" target="_blank"><button class="menu-button">Net Ninja</button></a>
-        <a href="https://youtu.be/WnN6dbos5u8" target="_blank"><button class="menu-button">Ethical Hacking</button></a>
-        <a href="https://www.os-book.com/OS9/slide-dir/index.html" target="_blank"><button class="menu-button">OS PPT Links</button></a>
-        <a href="https://www.youtube.com/watch?v=ExcRbA7fy_A&list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA" target="_blank"><button class="menu-button">MongoDB Tutorial</button></a>
-        <a href="https://www.youtube.com/watch?v=s1xc1HVsRk0&list=PLalrWAGybpB-L1PGA-NfFu2uiWHEsdscD" target="_blank"><button class="menu-button">Cassandra Tutorial</button></a>
-        <a href="https://github.com/umachandra-30/cprograms" target="_blank"><button class="menu-button">OS LAB PROGRAMS</button></a>
-        <a href="https://rosettacode.org/wiki/Category:Programming_Tasks" target="_blank"><button class="menu-button">Programming Tasks</button></a>
-        <a href="https://www.pdfdrive.com/" target="_blank"><button class="menu-button">Free Books for All Subjects</button></a>
-        <a href="https://cses.fi/" target="_blank"><button class="menu-button">Problem Solving Platform</button></a>
-        <a href="https://cp-algorithms.com/" target="_blank"><button class="menu-button">Algorithms Learning Resource</button></a>
+        <a href="https://goalkicker.com/" target="_blank">
+            <button class="menu-button">Programming Notes</button>
+        </a>
+        <a href="https://www.youtube.com/@NetNinja" target="_blank">
+            <button class="menu-button">Net Ninja</button>
+        </a>
+        <a href="https://youtu.be/WnN6dbos5u8" target="_blank">
+            <button class="menu-button">Ethical Hacking</button>
+        </a>
+        <a href="https://www.os-book.com/OS9/slide-dir/index.html" target="_blank">
+            <button class="menu-button">OS PPT Links</button>
+        </a>
+        <a href="https://www.youtube.com/watch?v=ExcRbA7fy_A&list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA" target="_blank">
+            <button class="menu-button">MongoDB Tutorial</button>
+        </a>
+        <a href="https://www.youtube.com/watch?v=s1xc1HVsRk0&list=PLalrWAGybpB-L1PGA-NfFu2uiWHEsdscD" target="_blank">
+            <button class="menu-button">Cassandra Tutorial</button>
+        </a>
+        <a href="https://github.com/umachandra-30/cprograms" target="_blank">
+            <button class="menu-button">OS LAB PROGRAMS</button>
+        </a>
+        <a href="https://rosettacode.org/wiki/Category:Programming_Tasks" target="_blank">
+            <button class="menu-button">Programming Tasks</button>
+        </a>
+        <a href="https://www.pdfdrive.com/" target="_blank">
+            <button class="menu-button">Free Books for All Subjects</button>
+        </a>
+        <a href="https://cses.fi/" target="_blank">
+            <button class="menu-button">Problem Solving Platform</button>
+        </a>
+        <a href="https://cp-algorithms.com/" target="_blank">
+            <button class="menu-button">Algorithms Learning Resource</button>
+        </a>
     </div>
     <div class="footer">&copy; 2025 Tech Learning Hub | Empowering Knowledge</div>
 </body>
